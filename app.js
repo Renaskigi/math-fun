@@ -34,9 +34,6 @@ function sum(num,num2){ //eslint-disable-line
 // Here is the test for sum(); uncomment it to run it
 testSum();
 
-
-
-
 /////////////////////////////////////
 /* Problem 2
 Write a function called multiply() that takes in two numbers 

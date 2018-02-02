@@ -50,11 +50,10 @@ function multiply(num1,num2){
     const numProduct = num1 * num2;
     return [numProduct, 'The product of ' + num1 + ' and ' + num2 + ' is ' + numProduct + '.'];
 }
-testMultiply();
+
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply();
-
+testMultiply();
 
 /////////////////////////////////////
 /* Problem 3
@@ -80,13 +79,16 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 
 // Write your code here
-function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+function sumAndMultiply(num1,num2,num3){
+    const sumConst1 = sum(num1, num2)[0];
+    const sumConst2 = sum(sumConst1, num3)[0];
+    const multiConst1 = multiply(num1, num2)[0];
+    const multiConst2 = multiply (multiConst1, num3)[0];
+    return [sumConst2, multiConst2, num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + sumConst2 + '.', 'The product of ' + num1 + ' and ' + num2 + ' and ' + num3 + ' is ' + multiConst2 + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
-
+testSumAndMultiply(4,7,5);
 
 /////////////////////////////////////
 /* Problem 4

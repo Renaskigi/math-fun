@@ -112,7 +112,7 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 
 // Write your code here
 
-function sumArray(testArray){ //eslint-disable-line
+function sumArray(testArray){
     let total = 0;
     for (let i = 0; i < testArray.length; i++){
         total = sum(total,testArray[i])[0];

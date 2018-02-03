@@ -112,13 +112,17 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 
 // Write your code here
 
-function sumArray(testArray){ //eslint-disable-line
-
+function sumArray(testArray){
+    let total = 0;
+    for (let i = 0; i < testArray.length; i++){
+        total = sum(total,testArray[i])[0];
+    }
+   
+    return [total, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + total + ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray();
-
+testSumArray();
 
 /////////////////////////////////////
 /* Problem 5

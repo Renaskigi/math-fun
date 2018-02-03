@@ -150,8 +150,12 @@ new branch for your work on the next question!
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+    let total = 1;
+    for (let i = 0; i < testArray.length; i++){
+        total = multiply(total,testArray[i])[0];
+    }
+    return [total, 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + total + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+testMultiplyArray();
